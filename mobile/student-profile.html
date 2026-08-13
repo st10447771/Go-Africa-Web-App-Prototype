@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Student Profile - GoAfrica</title>
+  <link rel="stylesheet" href="mobile-style.css">
+</head>
+<body>
+
+  <div class="mobile-frame">
+
+    <header class="mobile-header back-header">
+      <a href="initiatives.html" class="back-btn">&#8592;</a>
+      <div class="header-brand">
+        <h1>GoAfrica Foundation</h1>
+      </div>
+    </header>
+
+    <div class="profile-hero">
+      <div class="profile-photo">TM</div>
+      <h2>Thabo M.</h2>
+      <div class="profile-meta">16 years old &middot; Soweto, Gauteng</div>
+      <div class="dream-label">Education Dream: Aspiring Doctor</div>
+      <p class="profile-desc">
+        Thabo is a dedicated Grade 10 student with a passion for science and helping others.
+        He dreams of becoming a doctor to serve his community and provide healthcare to underserved areas.
+      </p>
+    </div>
+
+    <div class="page-content">
+
+      <div class="section">
+        <div class="section-label">Current Needs</div>
+        <div class="section-card">
+
+          <div class="need-checkbox-item">
+            <input type="checkbox" class="need-check" data-amount="2500" checked>
+            <div class="need-checkbox-info">
+              <h4>School Fees</h4>
+              <p>Grade 10 annual tuition</p>
+            </div>
+            <span class="need-price">R 2,500.00</span>
+          </div>
+
+          <div class="need-checkbox-item">
+            <input type="checkbox" class="need-check" data-amount="850">
+            <div class="need-checkbox-info">
+              <h4>Textbooks</h4>
+              <p>Mathematics, Science, English</p>
+            </div>
+            <span class="need-price">R 850.00</span>
+          </div>
+
+          <div class="need-checkbox-item">
+            <input type="checkbox" class="need-check" data-amount="450">
+            <div class="need-checkbox-info">
+              <h4>Uniform</h4>
+              <p>School uniform set</p>
+            </div>
+            <span class="need-price">R 450.00</span>
+          </div>
+
+          <div class="total-selected">
+            <span>Total Selected</span>
+            <span id="total-selected">R 2,500.00</span>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btn-add-to-list">Add to Donation List</button>
+
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="student-profile.html" class="active">
+        <span class="nav-icon-wrap">&#9783;</span>
+        Directory
+      </a>
+      <a href="initiatives.html">
+        <span class="nav-icon-wrap">&#9733;</span>
+        Impact
+      </a>
+      <a href="donation-list.html">
+        <span class="nav-icon-wrap">&#9829;</span>
+        Donate List
+      </a>
+      <a href="settings.html">
+        <span class="nav-icon-wrap">&#9786;</span>
+        Account
+      </a>
+    </nav>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="mobile-script.js"></script>
+</body>
+</html>

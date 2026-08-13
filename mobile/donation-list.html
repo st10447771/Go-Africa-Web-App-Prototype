@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Your Donation List - GoAfrica</title>
+  <link rel="stylesheet" href="mobile-style.css">
+</head>
+<body>
+
+  <div class="mobile-frame">
+
+    <header class="mobile-header">
+      <div class="header-brand">
+        <h1>GoAfrica Foundation</h1>
+      </div>
+      <div class="header-actions">
+        <button class="header-icon">&#9776;</button>
+        <div class="header-avatar">JD</div>
+      </div>
+    </header>
+
+    <div class="page-title-area">
+      <h2>Your Donation List</h2>
+      <p>Review your selected contributions before completing your donation.</p>
+    </div>
+
+    <div class="page-content">
+
+      <div class="donation-card" data-amount="2500">
+        <div class="student-photo">TM</div>
+        <div class="donation-card-body">
+          <div class="donation-card-top">
+            <h3>Thabo M.</h3>
+            <span class="badge badge-education">Education</span>
+          </div>
+          <div class="donation-desc">School Fees &mdash; Grade 10 Education Fund</div>
+          <div class="donation-amount">R 2,500.00</div>
+        </div>
+        <button class="remove-btn" title="Remove">&#10005;</button>
+      </div>
+
+      <div class="donation-card" data-amount="1800">
+        <div class="student-photo" style="background:#fce7f3;color:#be185d;">NK</div>
+        <div class="donation-card-body">
+          <div class="donation-card-top">
+            <h3>Nomsa K.</h3>
+            <span class="badge badge-medical">Medical</span>
+          </div>
+          <div class="donation-desc">Nursing Supplies &mdash; Aspiring Nurse Programme</div>
+          <div class="donation-amount">R 1,800.00</div>
+        </div>
+        <button class="remove-btn" title="Remove">&#10005;</button>
+      </div>
+
+      <div class="message-box">
+        <label for="encouragement">Add a Message of Encouragement</label>
+        <textarea id="encouragement" placeholder="Write a message to the students you're supporting..."></textarea>
+      </div>
+
+      <div class="summary-card">
+        <h3>Donation Summary</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="summary-subtotal">R 4,300.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Platform Fee (2.5%)</span>
+          <span id="summary-fee">R 107.50</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total Impact</span>
+          <span id="summary-total">R 4,407.50</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btn-complete-donation">Complete Donation</button>
+      <p class="secure-text">&#128274; Secure processing powered by GoAfrica</p>
+
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="student-profile.html">
+        <span class="nav-icon-wrap">&#9783;</span>
+        Directory
+      </a>
+      <a href="initiatives.html">
+        <span class="nav-icon-wrap">&#9733;</span>
+        Impact
+      </a>
+      <a href="donation-list.html" class="active">
+        <span class="nav-icon-wrap">&#9829;</span>
+        Donate List
+      </a>
+      <a href="settings.html">
+        <span class="nav-icon-wrap">&#9786;</span>
+        Account
+      </a>
+    </nav>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="mobile-script.js"></script>
+</body>
+</html>

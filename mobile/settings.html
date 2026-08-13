@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Campaign Settings - GoAfrica</title>
+  <link rel="stylesheet" href="mobile-style.css">
+</head>
+<body>
+
+  <div class="mobile-frame">
+
+    <header class="mobile-header back-header">
+      <a href="campaign.html" class="back-btn">&#8592;</a>
+      <div class="header-brand">
+        <h1>GoAfrica</h1>
+        <p>Student Portal</p>
+      </div>
+    </header>
+
+    <div class="page-title-area">
+      <h2>Campaign Settings</h2>
+    </div>
+
+    <div class="page-content">
+
+      <div class="section">
+        <div class="section-label">Campaign Status</div>
+        <div class="section-card">
+          <div class="toggle-row">
+            <div>
+              <h3>Active Donation</h3>
+              <p>Allow donors to contribute to your campaign</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked>
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-card">
+          <div class="needs-header">
+            <h3>My Campaign Needs</h3>
+            <span class="badge badge-active">Active</span>
+          </div>
+
+          <div class="need-item">
+            <div class="need-info">
+              <h4>Tuition Fees</h4>
+              <p>R 12,500.00 &middot; Grade 10 Annual</p>
+            </div>
+            <div class="need-actions">
+              <button class="icon-btn edit" title="Edit">&#9998;</button>
+              <button class="icon-btn delete" title="Delete">&#10005;</button>
+            </div>
+          </div>
+
+          <div class="need-item">
+            <div class="need-info">
+              <h4>Textbooks</h4>
+              <p>R 2,800.00 &middot; Mathematics, Science, English</p>
+            </div>
+            <div class="need-actions">
+              <button class="icon-btn edit" title="Edit">&#9998;</button>
+              <button class="icon-btn delete" title="Delete">&#10005;</button>
+            </div>
+          </div>
+
+          <button class="btn-add" id="btn-add-need">+ Add New Need</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Profile Verification</div>
+        <div class="section-card">
+          <div class="upload-row">
+            <div class="upload-info">
+              <h4>National ID / Passport</h4>
+              <p>Not uploaded</p>
+            </div>
+            <button class="btn-upload">Upload</button>
+          </div>
+          <div class="upload-row">
+            <div class="upload-info">
+              <h4>Academic Transcripts</h4>
+              <p>Uploaded &middot; 14 Jan 2026</p>
+            </div>
+            <button class="btn-upload">Upload</button>
+          </div>
+          <div class="upload-row">
+            <div class="upload-info">
+              <h4>Proof of Enrollment</h4>
+              <p>Not uploaded</p>
+            </div>
+            <button class="btn-upload">Upload</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-label">Account Actions</div>
+        <button class="btn-signout" id="btn-sign-out">Sign Out</button>
+      </div>
+
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="student-profile.html">
+        <span class="nav-icon-wrap">&#9786;</span>
+        My Profile
+      </a>
+      <a href="campaign.html">
+        <span class="nav-icon-wrap">&#9733;</span>
+        My Campaign
+      </a>
+      <a href="campaign.html">
+        <span class="nav-icon-wrap">&#9993;</span>
+        Messages
+      </a>
+      <a href="settings.html" class="active">
+        <span class="nav-icon-wrap">&#9881;</span>
+        Settings
+      </a>
+    </nav>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="mobile-script.js"></script>
+</body>
+</html>

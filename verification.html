@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification - GoAfrica Staff Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">GA</div>
+        <div class="logo-text">
+          <h1>GoAfrica</h1>
+          <p>Staff Portal</p>
+        </div>
+      </div>
+
+      <button class="btn-new-record" id="btn-new-record">+ New Record</button>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="nav-icon">&#9632;</span> Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9786;</span> Students
+        </a>
+        <a href="funds.html" class="nav-item">
+          <span class="nav-icon">&#8364;</span> Funds
+        </a>
+        <a href="initiatives.html" class="nav-item">
+          <span class="nav-icon">&#9733;</span> Initiatives
+        </a>
+        <a href="verification.html" class="nav-item active">
+          <span class="nav-icon">&#10003;</span> Verification
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9881;</span> Settings
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item">
+          <span class="nav-icon">?</span> Help
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#8594;</span> Sign Out
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" class="search-filter" data-target=".student-item" placeholder="Search students...">
+        </div>
+        <div class="topbar-actions">
+          <button class="topbar-icon-btn" title="Notifications">&#128276;</button>
+          <button class="topbar-icon-btn" title="Help">?</button>
+          <span class="topbar-link">Support</span>
+          <div class="topbar-profile" id="topbar-profile">
+            <div class="avatar">SM</div>
+            <span class="profile-name">Staff Member</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content" style="padding-bottom: 0;">
+
+        <div class="verification-layout">
+
+          <!-- Queue Panel -->
+          <div class="card queue-panel">
+            <div class="queue-panel-header">
+              <h3>Verification Queue</h3>
+              <div class="queue-count">24 Pending Reviews</div>
+            </div>
+            <div class="student-list">
+              <div class="student-item selected" data-index="0">
+                <h4>Amara Diop</h4>
+                <p>Computer Science BSc.</p>
+                <div class="student-id">ID: ST-9021</div>
+              </div>
+              <div class="student-item" data-index="1">
+                <h4>Kwame Osei</h4>
+                <p>Civil Engineering BEng.</p>
+                <div class="student-id">ID: ST-8843</div>
+              </div>
+              <div class="student-item" data-index="2">
+                <h4>Fatima Al-Fayed</h4>
+                <p>Medicine MBBS</p>
+                <div class="student-id">ID: ST-8710</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detail Panel -->
+          <div class="card detail-panel">
+            <div class="detail-header">
+              <div>
+                <h3 id="detail-name">Amara Diop</h3>
+                <span class="awaiting-badge">Awaiting Review</span>
+              </div>
+            </div>
+
+            <div class="detail-info">
+              <span id="detail-email">a.diop@example.edu</span>
+              <span id="detail-dob">12 May 1999</span>
+              <span id="detail-location">Dakar, Senegal</span>
+            </div>
+
+            <div class="doc-section">
+              <h4>National ID / Passport</h4>
+              <div class="doc-placeholder">
+                [ ID Document Preview ]
+              </div>
+            </div>
+
+            <div class="doc-section">
+              <h4>Academic Transcripts</h4>
+              <div class="doc-placeholder">
+                [ Academic Transcript Preview ]
+              </div>
+            </div>
+
+            <div class="review-section">
+              <h4>Review Notes / Rejection Reason</h4>
+              <textarea id="review-notes" placeholder="Add optional notes or specify reason if rejecting..."></textarea>
+              <div class="review-actions">
+                <button class="btn-danger" id="btn-reject">Reject Documents</button>
+                <button class="btn-primary" id="btn-approve">Approve Verification</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button class="modal-close" id="modal-close">OK</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

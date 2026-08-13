@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - GoAfrica Staff Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">GA</div>
+        <div class="logo-text">
+          <h1>GoAfrica</h1>
+          <p>Staff Portal</p>
+        </div>
+      </div>
+
+      <button class="btn-new-record" id="btn-new-record">+ New Record</button>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">&#9632;</span> Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9786;</span> Students
+        </a>
+        <a href="funds.html" class="nav-item">
+          <span class="nav-icon">&#8364;</span> Funds
+        </a>
+        <a href="initiatives.html" class="nav-item">
+          <span class="nav-icon">&#9733;</span> Initiatives
+        </a>
+        <a href="verification.html" class="nav-item">
+          <span class="nav-icon">&#10003;</span> Verification
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9881;</span> Settings
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item">
+          <span class="nav-icon">?</span> Help
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#8594;</span> Sign Out
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="topbar-search">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <button class="topbar-icon-btn" title="Notifications">&#128276;</button>
+          <button class="topbar-icon-btn" title="Help">?</button>
+          <span class="topbar-link">Support</span>
+          <div class="topbar-profile" id="topbar-profile">
+            <div class="avatar">SM</div>
+            <span class="profile-name">Staff Member</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <main class="page-content">
+
+        <div class="page-header">
+          <h2>Overview</h2>
+          <p>Command center for organizational metrics and recent activities.</p>
+          <div class="status-badge">
+            <span class="status-dot"></span> System Operational
+          </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="card">
+            <div class="card-label">Total Funds Raised</div>
+            <div class="card-value">R 4.2M</div>
+            <div class="card-sub positive">+12% vs last quarter</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Funds Disbursed</div>
+            <div class="card-value">R 2.8M</div>
+            <div class="card-sub">65% Target</div>
+          </div>
+          <div class="card warning-card">
+            <div class="card-label">Pending Verifications</div>
+            <div class="card-value">142</div>
+            <div class="card-sub warning">Requires attention</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Active Campaigns</div>
+            <div class="card-value">89</div>
+            <div class="card-sub">42 Univ. &middot; 47 Trade</div>
+          </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+
+          <!-- Recent Activity -->
+          <div class="card">
+            <div class="section-title">Recent Activity</div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <div class="activity-text">
+                    <strong>Standard Bank Foundation</strong> donated <strong>R 250,000</strong> to Engineering Scholars Fund.
+                  </div>
+                  <div class="activity-time">2 hours ago</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <div class="activity-text">
+                    Disbursement of <strong>R 15,000</strong> approved for <strong>Thabo M.</strong> (University of Cape Town).
+                  </div>
+                  <div class="activity-time">5 hours ago</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <div class="activity-text">
+                    New student registration submitted by <strong>Lerato K.</strong> awaiting verification.
+                  </div>
+                  <div class="activity-time">Yesterday</div>
+                </div>
+              </div>
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <div class="activity-text">
+                    <strong>Back-to-School 2026</strong> campaign reached 90% of funding goal.
+                  </div>
+                  <div class="activity-time">2 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Verification Queue -->
+          <div class="card">
+            <div class="section-title">Verification Queue</div>
+            <span class="priority-tag">High Priority</span>
+            <div class="queue-list">
+              <div class="queue-item">
+                <div class="queue-item-info">
+                  <h4>Lerato K.</h4>
+                  <p>ID Document Mismatch</p>
+                </div>
+              </div>
+              <div class="queue-item">
+                <div class="queue-item-info">
+                  <h4>Sipho N.</h4>
+                  <p>Proof of Registration</p>
+                </div>
+              </div>
+              <div class="queue-item">
+                <div class="queue-item-info">
+                  <h4>Amina D.</h4>
+                  <p>Missing Bank Details</p>
+                </div>
+              </div>
+            </div>
+            <a href="verification.html" class="btn-outline">Go to Verifications</a>
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button class="modal-close" id="modal-close">OK</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Initiatives - GoAfrica Staff Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">GA</div>
+        <div class="logo-text">
+          <h1>GoAfrica</h1>
+          <p>Staff Portal</p>
+        </div>
+      </div>
+
+      <button class="btn-new-record" id="btn-new-record">+ New Record</button>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="nav-icon">&#9632;</span> Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9786;</span> Students
+        </a>
+        <a href="funds.html" class="nav-item">
+          <span class="nav-icon">&#8364;</span> Funds
+        </a>
+        <a href="initiatives.html" class="nav-item active">
+          <span class="nav-icon">&#9733;</span> Initiatives
+        </a>
+        <a href="verification.html" class="nav-item">
+          <span class="nav-icon">&#10003;</span> Verification
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9881;</span> Settings
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item">
+          <span class="nav-icon">?</span> Help
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#8594;</span> Sign Out
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <button class="topbar-icon-btn" title="Notifications">&#128276;</button>
+          <button class="topbar-icon-btn" title="Help">?</button>
+          <span class="topbar-link">Support</span>
+          <div class="topbar-profile" id="topbar-profile">
+            <div class="avatar">SM</div>
+            <span class="profile-name">Staff Member</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content">
+
+        <div class="page-header page-header-row">
+          <div>
+            <h2>Initiative &amp; Campaign Manager</h2>
+            <p>Manage broader foundation goals, track funding progress, and monitor overall community impact across active campaigns.</p>
+          </div>
+          <button class="btn-add-initiative" id="btn-add-initiative">+ Add New Initiative</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid three-col">
+          <div class="card">
+            <div class="card-label">Total Active Campaigns</div>
+            <div class="card-value">12</div>
+            <div class="card-sub positive">+2 from last quarter</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Total Funds Raised</div>
+            <div class="card-value">R 4.2M</div>
+            <div class="card-sub">85% of annual goal</div>
+          </div>
+          <div class="card">
+            <div class="card-label">Total Students Reached</div>
+            <div class="card-value">15,420</div>
+            <div class="card-sub">Across 8 regions</div>
+          </div>
+        </div>
+
+        <!-- Active Initiatives -->
+        <div class="section-title">Active Initiatives</div>
+
+        <div class="card initiative-card">
+          <div class="initiative-header">
+            <h3>Back-to-School 2026</h3>
+            <button class="menu-dots" title="Options">&#8942;</button>
+          </div>
+          <p class="initiative-desc">
+            Providing comprehensive school supplies, uniforms, and initial tuition coverage for primary school students in rural districts.
+          </p>
+          <div class="initiative-meta">
+            <div class="meta-item">
+              <label>Status</label>
+              <span class="status-active">Active</span>
+            </div>
+            <div class="meta-item">
+              <label>Funding Goal</label>
+              <span>R 450K / R 500K</span>
+            </div>
+            <div class="meta-item">
+              <label>Students Enrolled</label>
+              <span>3,200</span>
+            </div>
+            <div class="meta-item">
+              <label>Target Date</label>
+              <span>Aug 2026</span>
+            </div>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-label">
+              <span>Funding Progress</span>
+              <span>90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button class="modal-close" id="modal-close">OK</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

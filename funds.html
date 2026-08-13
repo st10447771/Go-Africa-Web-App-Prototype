@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funds Management - GoAfrica Staff Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">GA</div>
+        <div class="logo-text">
+          <h1>GoAfrica</h1>
+          <p>Staff Portal</p>
+        </div>
+      </div>
+
+      <button class="btn-new-record" id="btn-new-record">+ New Record</button>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="nav-icon">&#9632;</span> Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9786;</span> Students
+        </a>
+        <a href="funds.html" class="nav-item active">
+          <span class="nav-icon">&#8364;</span> Funds
+        </a>
+        <a href="initiatives.html" class="nav-item">
+          <span class="nav-icon">&#9733;</span> Initiatives
+        </a>
+        <a href="verification.html" class="nav-item">
+          <span class="nav-icon">&#10003;</span> Verification
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#9881;</span> Settings
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a href="#" class="nav-item">
+          <span class="nav-icon">?</span> Help
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">&#8594;</span> Sign Out
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-actions">
+          <button class="topbar-icon-btn" title="Notifications">&#128276;</button>
+          <button class="topbar-icon-btn" title="Help">?</button>
+          <span class="topbar-link">Support</span>
+          <div class="topbar-profile" id="topbar-profile">
+            <div class="avatar">SM</div>
+            <span class="profile-name">Staff Member</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-content">
+
+        <div class="page-header">
+          <h2>Funds Management</h2>
+        </div>
+
+        <div class="page-search">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" placeholder="Search transactions...">
+        </div>
+
+        <div class="funds-layout">
+
+          <div>
+            <!-- Master Wallet -->
+            <div class="card wallet-card">
+              <div class="wallet-header">
+                <div>
+                  <div class="card-label">Foundation Master Wallet</div>
+                  <div class="card-value">ZAR 12,450,000.00</div>
+                  <div class="card-sub positive">+5.2% allocated vs last month</div>
+                </div>
+                <button class="btn-fund-account">Fund Account</button>
+              </div>
+            </div>
+
+            <!-- Bar Chart -->
+            <div class="card chart-section">
+              <div class="chart-title">Disbursement Vol: Q3 Trend</div>
+              <div class="bar-chart">
+                <div class="bar-group">
+                  <div class="bar" style="height: 55%;"></div>
+                  <span class="bar-label">Jul</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 72%;"></div>
+                  <span class="bar-label">Aug</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 48%;"></div>
+                  <span class="bar-label">Sep</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 85%;"></div>
+                  <span class="bar-label">Oct</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 65%;"></div>
+                  <span class="bar-label">Nov</span>
+                </div>
+                <div class="bar-group">
+                  <div class="bar" style="height: 90%;"></div>
+                  <span class="bar-label">Dec</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Cards -->
+          <div class="funds-sidebar-cards">
+            <div class="card warning-card">
+              <div class="card-label">Pending Requests</div>
+              <div class="card-value">42</div>
+              <div class="card-sub warning">Requires Attention</div>
+            </div>
+            <div class="card">
+              <div class="card-label">Funds Disbursed (MTD)</div>
+              <div class="card-value">ZAR 850k</div>
+              <div class="card-sub positive">On track for monthly target</div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button class="modal-close" id="modal-close">OK</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
