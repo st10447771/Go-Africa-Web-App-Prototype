@@ -1,0 +1,240 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>GoAfrica Staff Registration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#f1f4f2",
+                      "secondary-container": "#a4f792",
+                      "on-primary-fixed-variant": "#274e3d",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#e4e2dd",
+                      "inverse-surface": "#2d3130",
+                      "surface-dim": "#d7dbd9",
+                      "on-tertiary-fixed": "#1b1c19",
+                      "on-background": "#181c1c",
+                      "outline-variant": "#c1c8c2",
+                      "secondary-fixed": "#a4f792",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#eef1f0",
+                      "on-secondary-fixed": "#002201",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-container": "#a7a6a2",
+                      "on-surface-variant": "#414844",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#1b4332",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#c1ecd4",
+                      "surface-container-high": "#e6e9e7",
+                      "on-tertiary-fixed-variant": "#474744",
+                      "on-primary-container": "#86af99",
+                      "primary": "#012d1d",
+                      "tertiary-fixed-dim": "#c8c6c2",
+                      "outline": "#717973",
+                      "secondary-fixed-dim": "#89da79",
+                      "inverse-primary": "#a5d0b9",
+                      "surface": "#f7faf8",
+                      "secondary": "#1f6d1a",
+                      "surface-tint": "#3f6653",
+                      "surface-container-highest": "#e0e3e1",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#ebeeed",
+                      "tertiary-container": "#3c3c39",
+                      "primary-fixed-dim": "#a5d0b9",
+                      "background": "#f7faf8",
+                      "surface-variant": "#e0e3e1",
+                      "on-surface": "#181c1c",
+                      "on-secondary-fixed-variant": "#005303",
+                      "tertiary": "#262624",
+                      "on-secondary-container": "#267320",
+                      "on-primary-fixed": "#002114",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f7faf8",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "density_comfortable": "12px",
+                      "unit": "8px",
+                      "margin_mobile": "16px",
+                      "margin_desktop": "40px",
+                      "density_compact": "4px",
+                      "grid_columns": "12",
+                      "margin_tablet": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-md": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "mono-label": [
+                              "Courier Prime"
+                      ],
+                      "body-sm": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "mono-label": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center font-body-md relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40 mix-blend-luminosity" data-alt="A professional, modern corporate office environment in Africa. The scene features bright, natural lighting filtering through large windows, highlighting clean architectural lines and warm, earthy tones. Abstract, subtle bokeh effects create a sense of depth and focus, while hints of greenery convey growth and stability. The overall aesthetic is clean, secure, and inviting, perfectly suited for an enterprise software background." style="background-image: url(&quot;https://thumbs.dreamstime.com/b/nature-forest-trees-growing-to-upward-to-sun-wallpaper-42907586.jpg&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-surface/90 to-surface/95 backdrop-blur-sm"></div>
+</div>
+<main class="w-full max-w-lg z-10 p-margin_mobile md:p-margin_tablet">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-lg p-margin_tablet md:p-margin_desktop w-full relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div class="text-center mb-8">
+<div class="flex justify-center mb-4"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI8R5N9aC1DBVvzdS3ghtLSc0vZ19CIkDguhtzF53ghUwdC7Wua399FtiJCgkDjjBqdwjXWxPz9zklGYAXW64ckcrEvI1DLwo_BgZuXk-3ooFxbYOzie_7by6F8t6I_R10ipi6dgJ_llfvskrL8v4jMkS645ZJShUnmi9_MG_euipZ4oUmcERLSCDjNauL8GBq-OCCNZKOnPXh0Rd16r_81rfDDsAvLiWxNC9ZrHSR3akiWzZ0nDlcBuKQi9tEbryi3A" alt="GoAfrica Foundation Logo" class="h-24 w-auto object-contain"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">Staff Portal Registration</p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div class="space-y-4">
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-1" for="fullName">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-colors shadow-sm" id="fullName" name="fullName" required="" type="text">
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-1" for="employeeId">Employee ID</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-colors shadow-sm" id="employeeId" name="employeeId" required="" type="text">
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-1" for="workEmail">Work Email</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-colors shadow-sm" id="workEmail" name="workEmail" required="" type="email">
+</div>
+<div>
+<label class="block font-body-sm text-body-sm font-bold text-on-surface mb-1" for="password">Create Password</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container focus:border-transparent transition-colors shadow-sm" id="password" name="password" required="" type="password">
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Must be at least 12 characters and include a special character.</p>
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary rounded font-label-md text-label-md py-3 px-4 hover:bg-surface-tint transition-colors flex items-center justify-center gap-2" type="submit">
+<span class="">Register Account</span>
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+</button>
+</div>
+</form>
+<div class="mt-8 text-center border-t border-outline-variant pt-6">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Already have an account? 
+                    <a class="text-primary font-bold hover:underline transition-all" href="#">Sign In</a>
+</p>
+</div>
+</div>
+<div class="mt-6 text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                © 2024 GoAfrica Foundation.
+            </p>
+</div>
+</main>
+
+
+
+
+
+
+</body></html>
