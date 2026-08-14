@@ -1,0 +1,72 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+<title>Student Profile - GoAfrica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration (shared donor design tokens) -->
+<script src="js/tailwind-config-donor.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex justify-center">
+<div class="w-full max-w-md min-h-screen bg-surface flex flex-col relative pb-20 shadow-xl">
+<header class="flex items-center gap-3 px-5 py-4 border-b border-outline-variant sticky top-0 bg-surface z-30"><a href="donation-list.html" class="material-symbols-outlined text-on-surface">arrow_back</a><div class="flex-1"><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Student Profile</h1></div></header><main class="flex-1 px-5 py-5 flex flex-col gap-4"><div class="rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant">
+<div class="h-28 bg-primary-container"></div>
+<div class="p-4 -mt-10">
+<div class="w-20 h-20 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm border-4 border-surface">TM</div>
+<div class="flex items-center gap-1 mt-2">
+<h2 class="font-headline-md text-headline-md text-on-surface">Thabo M.</h2>
+<span class="material-symbols-outlined icon-fill text-primary text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Grade 10 &middot; Limpopo Province</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Thabo is a dedicated student aiming to become an engineer. Your support helps cover his school fees, textbooks, and daily transport to school.</p>
+</div>
+</div>
+
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Select Needs to Support</h3>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-3">
+<input type="checkbox" class="need-check w-5 h-5 accent-primary" data-amount="2500" checked>
+<div class="flex-1">
+<div class="font-body-md text-on-surface font-semibold">School Fees</div>
+<div class="font-label-md text-[11px] text-on-surface-variant">Grade 10 Education Fund</div>
+</div>
+<div class="font-body-sm text-on-surface font-semibold">R 2,500</div>
+</label>
+<label class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-3">
+<input type="checkbox" class="need-check w-5 h-5 accent-primary" data-amount="800">
+<div class="flex-1">
+<div class="font-body-md text-on-surface font-semibold">Textbooks</div>
+<div class="font-label-md text-[11px] text-on-surface-variant">Mathematics, Science, English</div>
+</div>
+<div class="font-body-sm text-on-surface font-semibold">R 800</div>
+</label>
+<label class="flex items-center gap-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-3">
+<input type="checkbox" class="need-check w-5 h-5 accent-primary" data-amount="450">
+<div class="flex-1">
+<div class="font-body-md text-on-surface font-semibold">Transport</div>
+<div class="font-label-md text-[11px] text-on-surface-variant">Monthly bus fare to school</div>
+</div>
+<div class="font-body-sm text-on-surface font-semibold">R 450</div>
+</label>
+</div>
+</div>
+
+<div class="bg-surface-container-low rounded-xl p-4 flex justify-between items-center sticky bottom-24">
+<span class="font-body-md text-on-surface">Selected Total</span>
+<span id="total-selected" class="font-headline-sm text-headline-sm text-primary">R 0.00</span>
+</div>
+
+<button class="btn-primary w-full bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full" id="btn-add-to-list">Add to Donation List</button></main><nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-surface border-t border-outline-variant flex items-stretch px-2 py-2 z-40"><a href="student_directory.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-primary"><span class="material-symbols-outlined icon-fill text-[22px]">groups</span><span class="font-label-md text-[11px]">Directory</span></a><a href="impact.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">volunteer_activism</span><span class="font-label-md text-[11px]">Impact</span></a><a href="donation-list.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">favorite</span><span class="font-label-md text-[11px]">Donate List</span></a><a href="donor_account_dashboard.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">person</span><span class="font-label-md text-[11px]">Account</span></a></nav></div>
+<div class="toast fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded font-body-sm text-body-sm opacity-0 pointer-events-none transition-opacity z-[70]" id="toast"></div>
+<script src="js/donor-app.js"></script>
+</body></html>

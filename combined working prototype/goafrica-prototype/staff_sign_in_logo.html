@@ -1,0 +1,132 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>GoAfrica Staff Portal - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Courier+Prime&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="js/tailwind-config-staff.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f7faf8;
+        }
+        .login-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .form-input:focus {
+            border-color: #012d1d;
+            box-shadow: 0 0 0 1px #012d1d;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex items-center justify-center p-4" style="background-color: rgb(247, 250, 248);">
+<!-- Main Login Container -->
+<div class="w-full max-w-md">
+<!-- Logo and Brand Header (Extracted from Shared Components logic) -->
+<div class="flex flex-col items-center mb-8">
+<div class="size-12 mb-4 text-primary"><img alt="GoAfrica Foundation Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqfJdBRZf8JYVVXgXaAKsudZO7cMSnDGz4JD7wiKp1nl4XEIPtUcNOvrm849rAmQ_HAkdFhBa14SHVTjKMKaXxk66M7RqL_BcOLtynPNMeVA7VCAyddSk9FsRao52t1sikrI-YOcp7z-_b3jWNsEvTTAMo7Jx5_8w3pbKjyTvPf472mJaFTo7zTI35VuYJZlrtzres5U5N6AeJp_Q8HaJqnySddBgfs1F-bxbhJVMFYPKpn10Q8dMFvdOBDcKbyyFh4w"></div>
+<h1 class="text-on-surface text-headline-lg">GoAfrica Portal</h1>
+
+</div>
+<!-- Login Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant login-card">
+<div class="mb-8">
+<h2 class="text-headline-md text-on-surface">Staff Login</h2>
+<p class="text-body-sm text-on-surface-variant mt-2">Enter your credentials to manage African adventure logistics.</p>
+</div>
+<form action="#" class="space-y-6" id="loginForm" method="POST">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-label-md text-on-surface uppercase tracking-wider" for="email">Employee Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="mail">mail</span>
+<input class="form-input w-full pl-11 pr-4 py-3 bg-surface-container-low border border-outline-variant rounded-lg text-body-md focus:outline-none transition-all duration-200" id="email" name="email" placeholder="username@goafrica.com" required="" type="email">
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<label class="block text-label-md text-on-surface uppercase tracking-wider" for="password">Password</label>
+<a class="text-label-md text-secondary hover:underline transition-colors duration-200" href="#">Forgot Password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="lock">lock</span>
+<input class="form-input w-full pl-11 pr-12 py-3 bg-surface-container-low border border-outline-variant rounded-lg text-body-md focus:outline-none transition-all duration-200" id="password" name="password" placeholder="••••••••" required="" type="password">
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface focus:outline-none" onclick="togglePassword()" type="button">
+<span class="material-symbols-outlined" data-icon="visibility" id="passwordIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" id="remember" name="remember" type="checkbox">
+<label class="text-body-sm text-on-surface-variant cursor-pointer select-none" for="remember">Remember this device for 30 days</label>
+</div>
+<!-- Sign In Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-semibold py-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md active:scale-[0.98]" type="submit">
+<span class="">Sign In</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="login">login</span>
+</button>
+</form>
+<!-- Security Footer -->
+<div class="mt-8 pt-6 border-t border-outline-variant text-center">
+<div class="flex items-center justify-center gap-2 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined text-[16px]" data-icon="encrypted">encrypted</span>
+
+</div>
+</div>
+</div>
+<!-- Help Link -->
+<p class="text-center mt-6 text-body-sm text-on-surface-variant">
+            Trouble logging in? <a class="text-secondary font-semibold hover:underline" href="#">Contact IT Support</a>
+</p>
+<!-- Dynamic Background Detail -->
+
+</div>
+<script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const passwordIcon = document.getElementById('passwordIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.innerText = 'visibility_off';
+            } else {
+                passwordInput.type = 'password';
+                passwordIcon.innerText = 'visibility';
+            }
+        }
+
+        // Add a simple interaction for the form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalContent = btn.innerHTML;
+            
+            btn.disabled = true;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span>Authenticating...</span>
+            `;
+            
+            // Simulate API call
+            setTimeout(() => {
+                window.location.href = 'staff_overview_dashboard.html';
+            }, 1200);
+        });
+    </script>
+
+
+
+
+
+
+</body></html>

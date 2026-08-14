@@ -1,0 +1,64 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+<title>My Campaign - GoAfrica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration (shared donor design tokens) -->
+<script src="js/tailwind-config-donor.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex justify-center">
+<div class="w-full max-w-md min-h-screen bg-surface flex flex-col relative pb-20 shadow-xl">
+<header class="flex items-center gap-3 px-5 py-4 border-b border-outline-variant sticky top-0 bg-surface z-30"><div class="flex-1"><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight">My Campaign</h1><p class="font-label-md text-[11px] text-on-surface-variant">Student Portal</p></div></header><main class="flex-1 px-5 py-5 flex flex-col gap-4"><div class="rounded-xl overflow-hidden bg-primary-container relative h-36 flex items-end p-4">
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="relative">
+<h2 class="font-headline-md text-headline-md text-white">Thabo's Grade 10 Journey</h2>
+<p class="font-body-sm text-body-sm text-white/90">Supporting my final years of school</p>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4">
+<div class="flex justify-between font-label-md text-label-md text-on-surface-variant mb-1"><span>Funding Progress</span><span>62%</span></div>
+<div class="w-full h-2.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-primary rounded-full" style="width:62%"></div></div>
+<div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant mt-2"><span>R 9,300 raised</span><span>Goal: R 15,000</span></div>
+</div>
+
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-2.5 rounded-full" id="btn-share-campaign">
+<span class="material-symbols-outlined align-middle text-[18px] mr-1">share</span>Share My Campaign
+</button>
+<a href="settings.html" class="flex-1 text-center border border-outline-variant text-on-surface font-label-md text-label-md py-2.5 rounded-full">Edit Needs</a>
+</div>
+
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Recent Messages</h3>
+<div class="flex flex-col gap-2">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-3">
+<div class="flex justify-between items-start">
+<span class="font-body-sm text-on-surface font-semibold">Anonymous Donor</span>
+<span class="font-label-md text-[11px] text-on-surface-variant">2 days ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Proud of how far you've come — keep working hard, Thabo!</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-3">
+<div class="flex justify-between items-start">
+<span class="font-body-sm text-on-surface font-semibold">Sarah D.</span>
+<span class="font-label-md text-[11px] text-on-surface-variant">5 days ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Happy to help cover your textbooks this term. Good luck!</p>
+</div>
+</div>
+<button class="w-full mt-2 font-label-md text-label-md text-primary py-2" id="btn-read-all">Read all messages</button>
+</div></main><nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-surface border-t border-outline-variant flex items-stretch px-2 py-2 z-40"><a href="edit_student_profile.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">account_circle</span><span class="font-label-md text-[11px]">My Profile</span></a><a href="campaign.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-primary"><span class="material-symbols-outlined icon-fill text-[22px]">campaign</span><span class="font-label-md text-[11px]">My Campaign</span></a><a href="messages.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">mail</span><span class="font-label-md text-[11px]">Messages</span></a><a href="settings.html" class="flex flex-col items-center gap-0.5 flex-1 py-1 text-on-surface-variant"><span class="material-symbols-outlined  text-[22px]">settings</span><span class="font-label-md text-[11px]">Settings</span></a></nav></div>
+<div class="toast fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded font-body-sm text-body-sm opacity-0 pointer-events-none transition-opacity z-[70]" id="toast"></div>
+<script src="js/donor-app.js"></script>
+</body></html>

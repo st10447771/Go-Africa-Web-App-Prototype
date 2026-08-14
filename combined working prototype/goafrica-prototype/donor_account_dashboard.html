@@ -1,0 +1,178 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>GoAfrica Foundation - My Account</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="js/tailwind-config-donor.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-[100px] font-body-md antialiased">
+<!-- Top App Bar (Web & Tablet) -->
+<header class="hidden md:flex justify-between items-center px-margin-mobile h-16 w-full fixed top-0 z-50 backdrop-blur-md bg-surface/80 shadow-sm">
+<div class="flex items-center gap-4">
+<button aria-label="Menu" class="text-on-surface-variant active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">GoAfrica Foundation</span>
+</div>
+<nav class="flex gap-6 items-center">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-full transition-colors" href="student_directory.html">Directory</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-full transition-colors" href="impact.html">Impact</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-full transition-colors" href="donation-list.html">Donate List</a>
+<a class="font-label-lg text-label-lg text-primary bg-surface-container-highest px-4 py-2 rounded-full transition-colors flex items-center gap-2" href="donor_account_dashboard.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span> Account
+            </a>
+</nav>
+</header>
+<!-- Mobile Top Header Contextual -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile h-16 w-full fixed top-0 z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">My Account</span>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-variant border-2 border-primary-container">
+<img alt="Jane Doe Avatar" class="w-full h-full object-cover" data-alt="Close-up portrait of a smiling young African woman, Jane Doe, soft natural lighting, warm earthy tones in the background, conveying approachability and trust." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwgPwTu8FktSSFGYNf6aeoi8LorxYDjAR2Z4YtCts2Q&amp;s=10">
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-4xl mx-auto pt-[80px] px-margin-mobile md:px-margin-desktop space-y-8">
+<!-- Profile Section -->
+<section class="flex flex-col items-center pt-8 pb-4">
+<div class="relative w-24 h-24 mb-4">
+<img alt="Jane Doe Avatar" class="w-full h-full rounded-full object-cover shadow-md border-4 border-surface" data-alt="Close-up portrait of a smiling young African woman, Jane Doe, soft natural lighting, warm earthy tones in the background, conveying approachability and trust." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvwgPwTu8FktSSFGYNf6aeoi8LorxYDjAR2Z4YtCts2Q&amp;s=10">
+<button class="absolute bottom-0 right-0 bg-primary text-on-primary rounded-full p-1.5 shadow-lg hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-background">Jane Doe</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">jane.doe@example.com</p>
+</section>
+<!-- Wallet & Payments Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Balance Card -->
+<div class="bg-surface-container-lowest rounded-xl p-card-padding border border-surface-variant shadow-sm flex flex-col justify-between h-48 hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<h2 class="font-label-lg text-label-lg uppercase tracking-wide">Wallet Balance</h2>
+</div>
+<span class="bg-primary/10 text-primary-container font-label-md text-label-md px-2 py-1 rounded-full">ZAR</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">Current Available</p>
+<p class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background">R 0.00</p>
+</div>
+</div>
+<!-- Payment Methods Card -->
+<div class="bg-surface-container-lowest rounded-xl p-card-padding border border-surface-variant shadow-sm flex flex-col justify-between h-48">
+<div>
+<h2 class="font-label-lg text-label-lg text-primary uppercase tracking-wide mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">credit_card</span> Payment Methods
+                    </h2>
+<!-- Existing Card -->
+<div class="flex items-center justify-between p-3 bg-surface-container-low rounded-lg mb-3">
+<div class="flex items-center gap-3">
+<div class="bg-surface w-10 h-6 rounded flex items-center justify-center text-xs font-bold text-on-surface border border-outline-variant shadow-sm">
+                                VISA
+                            </div>
+<span class="font-body-sm text-body-sm text-on-background">•••• 4242</span>
+</div>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full hover:bg-primary-container hover:shadow-md transition-all active:scale-[0.98] flex justify-center items-center gap-2">
+<span class="material-symbols-outlined">add</span> Add Card
+                </button>
+</div>
+</section>
+<!-- Account Actions List -->
+<section class="bg-surface-container-lowest rounded-xl border border-surface-variant shadow-sm overflow-hidden">
+<h2 class="font-label-lg text-label-lg text-primary uppercase tracking-wide p-card-padding pb-2 border-b border-surface-variant bg-surface-container/30">
+                Account Settings
+            </h2>
+<ul class="divide-y divide-surface-variant">
+<li class="">
+<a class="flex items-center justify-between p-card-padding hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-background">Edit Profile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update personal details</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+</li>
+<li class="">
+<a class="flex items-center justify-between p-card-padding hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-background">Notification Preferences</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage alerts and updates</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+</li>
+<li class="">
+<a class="flex items-center justify-between p-card-padding hover:bg-surface-container-low transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">security</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-background">Security</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Password and authentication</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</a>
+</li>
+</ul>
+</section>
+<!-- Sign Out -->
+<section class="pt-6 pb-12 flex justify-center">
+<button class="flex items-center gap-2 text-error font-label-lg text-label-lg border border-error/30 bg-error-container/30 px-6 py-3 rounded-full hover:bg-error-container transition-colors" onclick="window.location.href='role_selection_portal_style.html'">
+<span class="material-symbols-outlined">logout</span> Sign Out
+            </button>
+</section>
+</main>
+<!-- Bottom Nav Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-xl bg-surface-container shadow-[0_-1px_4px_0_rgba(0,0,0,0.05)] flex justify-around items-center h-20 pb-safe px-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-90 transition-transform duration-200" href="student_directory.html">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md mt-1">Directory</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-90 transition-transform duration-200" href="impact.html">
+<span class="material-symbols-outlined">volunteer_activism</span>
+<span class="font-label-md text-label-md mt-1">Impact</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 active:scale-90 transition-transform duration-200" href="donation-list.html">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label-md text-label-md mt-1">Donate List</span>
+</a>
+<!-- Active State Logic Applied Here -->
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 active:scale-90 transition-transform duration-200" href="donor_account_dashboard.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-md text-label-md mt-1">Account</span>
+</a>
+</nav>
+
+
+</body></html>
