@@ -1,0 +1,38 @@
+Here's a rundown based on everything currently wired together.
+
+## How it works
+
+`role_selection_portal_style.html` is the front door — it splits visitors into two tracks: **Donor/Student** or **Staff**. From there each track has its own sign-in, its own visual style (green for donor/student, teal for staff), and its own nav bar, but everything pulls colors from the same two shared token files (`js/tailwind-config-donor.js` / `-staff.js`) so a rebrand only means editing one file per track.
+
+Within the donor/student track there are actually two different personas sharing the same bottom-nav shell: **donors** browse and give money, **students** manage their own campaign. They're kept apart by which nav bar (and which pages) each one lands on after signing in — nothing in the code currently checks "is this a donor or a student," it's just which links you click.
+
+## Screens by role
+
+**Donor**
+- `sign_in.html` / `sign_up.html` — auth
+- `create_donor_profile.html` — onboarding
+- `donor_account_dashboard.html` — home base, "My Account" nav tab
+- `student_directory.html` — browse students to support ("Directory" tab)
+- `student-profile.html` — single student detail, select needs (currently unlinked from the nav — see below)
+- `impact.html` — foundation-wide impact stats ("Impact" tab)
+- `donation-list.html` — cart/checkout ("Donate List" tab)
+- `donation-success.html` — confirmation after donating
+
+**Student / sponsee**
+- `create_student_profile.html` — onboarding
+- `edit_student_profile.html` — "My Profile" tab
+- `campaign.html` — "My Campaign" tab, funding progress + share
+- `messages.html` — "Messages" tab, notes from donors
+- `settings.html` — "Settings" tab, manage needs list + upload verification docs
+
+**Staff**
+- `staff_sign_in_logo.html` / `staff_registration.html` — auth
+- `staff_portal_landing_page.html` — marketing-style hub after login, links into the three modules below
+- `staff_overview_dashboard.html` — sidebar "Dashboard", KPI summary
+- `student_management_directory.html` — sidebar "Students", full student table
+- `funds.html` — sidebar "Funds", disbursement tracking
+- `initiatives.html` — sidebar "Initiatives", campaign management
+- `verification.html` — sidebar "Verification", approve/reject uploaded docs
+- `staff_settings.html` — sidebar "Settings"
+
+**Unused:** `student-profile.html` isn't reachable from any nav — please wire it in (e.g. clicking a card in `student_directory.html`).
