@@ -1,5 +1,9 @@
 // Shared behaviour for GoAfrica staff-portal pages
 // (initiatives.html, funds.html, verification.html, student_management_directory.html)
+// Code Attribution
+// This method was taken from mdn
+// Link: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event 
+// Author Name: MDN
 document.addEventListener("DOMContentLoaded", function () {
   wireModal();
   wireToastButtons();
@@ -16,6 +20,12 @@ function showToast(message) {
     toast.classList.remove("opacity-100");
   }, 2200);
 }
+
+// Code Attribution
+// This method was taken from stackoverflow
+// Link: https://stackoverflow.com/questions/66085176/add-remove-class-on-click-in-pure-js
+// Author: Barmar
+// Profile Link: https://stackoverflow.com/users/1491895/barmar
 
 function showModal(title, message) {
   var overlay = document.getElementById("modal-overlay");

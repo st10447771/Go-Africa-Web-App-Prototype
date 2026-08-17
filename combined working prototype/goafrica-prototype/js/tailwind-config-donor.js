@@ -1,6 +1,10 @@
-// Shared Tailwind design tokens — GoAfrica DONOR-facing pages
-// (sign in/up, donor dashboard, donor & student profile creation)
-// Derived from unity_growth/DESIGN.md — edit colors here, not per-page.
+
+        // Code Attribution 
+        // This method was taken from stackoverflow 
+        // Link: https://stackoverflow.com/questions/74626693/how-to-install-tailwind-css-in-html-correctly 
+        // Author: Dipo Ahmed 
+        // Author Profile: https://stackoverflow.com/users/11229002/dipo-ahmed 
+        
 tailwind.config = {
         darkMode: "class",
         theme: {
