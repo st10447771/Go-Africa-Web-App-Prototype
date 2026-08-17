@@ -1,6 +1,11 @@
 // Shared Tailwind design tokens — GoAfrica STAFF-facing pages
 // (role selection, staff sign in/registration, staff portal, student directory)
-// Derived from unity_growth_staff_portal/DESIGN.md — edit colors here, not per-page.
+//  edit colors here, not per-page.
+// Code Attribution 
+        // This method was taken from stackoverflow 
+        // Link: https://stackoverflow.com/questions/74626693/how-to-install-tailwind-css-in-html-correctly 
+        // Author: Dipo Ahmed 
+        // Author Profile: https://stackoverflow.com/users/11229002/dipo-ahmed 
 tailwind.config = {
           darkMode: "class",
           theme: {
@@ -54,6 +59,12 @@ tailwind.config = {
                       "surface-bright": "#f7faf8",
                       "on-tertiary": "#ffffff"
               },
+
+          //Code Attribution
+          // This method was taken from tailwind css
+          // Link: https://v1.tailwindcss.com/docs/border-radius
+          // Author: Tailwind CSS
+                      
               "borderRadius": {
                       "DEFAULT": "0.125rem",
                       "lg": "0.25rem",
@@ -70,6 +81,12 @@ tailwind.config = {
                       "margin_tablet": "24px",
                       "gutter": "24px"
               },
+
+          //Code Attribution
+          // This method was taken from tailwind css
+          // Link: https://v1.tailwindcss.com/docs/font-family
+          // Author: Tailwind CSS
+                      
               "fontFamily": {
                       "headline-sm": [
                               "Manrope"
@@ -99,6 +116,12 @@ tailwind.config = {
                               "Manrope"
                       ]
               },
+                      
+          //Code Attribution
+          // This method was taken from tailwind css
+          // Link: https://v1.tailwindcss.com/docs/font-size https://v1.tailwindcss.com/docs/line-height
+          // Author: Tailwind CSS
+                      
               "fontSize": {
                       "headline-sm": [
                               "20px",
