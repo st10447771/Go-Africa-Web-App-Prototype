@@ -10,29 +10,14 @@ Ensure Live Server by Ritwick Dey is installed.
 
 Right click the role\_selection\_portal\_style, and 'Open with Live Server'.
 
-
-
-side note:
-
-student-profile.html, isn't linked to anything, so please link it to Thabo M. in the student\_directory.html.
-
-If you have time just make the colour schemes match.
-
-
-
-Here's a rundown based on everything currently wired together.
-
-
-
 \## How it works
-
 
 
 `role\_selection\_portal\_style.html` is the front door — it splits visitors into two tracks: \*\*Donor/Student\*\* or \*\*Staff\*\*. From there each track has its own sign-in, its own visual style (green for donor/student, teal for staff), and its own nav bar, but everything pulls colors from the same two shared token files (`js/tailwind-config-donor.js` / `-staff.js`) so a rebrand only means editing one file per track.
 
 
 
-Within the donor/student track there are actually two different personas sharing the same bottom-nav shell: \*\*donors\*\* browse and give money, \*\*students\*\* manage their own campaign. They're kept apart by which nav bar (and which pages) each one lands on after signing in — nothing in the code currently checks "is this a donor or a student," it's just which links you click.
+Within the donor/student track there are actually two different roles sharing the same bottom-nav shell: \*\*donors\*\* browse and give money, \*\*students\*\* manage their own campaign. They're kept apart by which nav bar (and which pages) each one lands on after signing in — nothing in the code currently checks "is this a donor or a student," it's just which links you click.
 
 
 
@@ -77,8 +62,6 @@ Within the donor/student track there are actually two different personas sharing
 \*\*Staff\*\*
 
 \- `staff\_sign\_in\_logo.html` / `staff\_registration.html` — auth
-
-\- `staff\_portal\_landing\_page.html` — marketing-style hub after login, links into the three modules below
 
 \- `staff\_overview\_dashboard.html` — sidebar "Dashboard", KPI summary
 
