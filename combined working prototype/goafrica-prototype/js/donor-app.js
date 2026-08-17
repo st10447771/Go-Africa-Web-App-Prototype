@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   setupGenericButtons();
 });
 
-<!-- Code Attribution -->
-<!-- This method was taken from Medium -->
-<!-- Link: https://medium.com/@manuisthegiggachad101/a-very-satisfying-clicking-simulator-that-i-made-45bac04e80b6 -->
-<!-- Author Name: Edit King -->
-<!-- Profile Link: https://medium.com/@manuisthegiggachad101 -->
+// Code Attribution
+// This method was taken from Medium
+// Link: https://medium.com/@manuisthegiggachad101/a-very-satisfying-clicking-simulator-that-i-made-45bac04e80b6 
+// Author Name: Edit King 
+// Profile Link: https://medium.com/@manuisthegiggachad101 
   
 function showToast(message, isError) {
   var toast = document.getElementById("toast");
@@ -68,11 +68,11 @@ function setupNeedCheckboxes() {
   }
 }
 
-<!-- Code Attribution -->
-<!-- This method was taken from stackoverflow -->
-<!-- Link: https://stackoverflow.com/questions/66085176/add-remove-class-on-click-in-pure-js -->
-<!-- Author Name: Naren -->
-<!-- Profile Link: https://stackoverflow.com/users/6516699/naren -->
+// Code Attribution 
+// This method was taken from stackoverflow 
+// Link: https://stackoverflow.com/questions/66085176/add-remove-class-on-click-in-pure-js 
+// Author Name: Naren 
+// Profile Link: https://stackoverflow.com/users/6516699/naren 
 
 function setupDonationList() {
   var removeBtns = document.querySelectorAll(".remove-btn");
